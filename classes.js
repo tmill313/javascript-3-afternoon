@@ -183,7 +183,8 @@ class Machine {
   reboot() {
     this.wear_and_tear_count -= 10;
     this.needs_reboot = false;
-    return(cb);
+    let rebooted = () => 'done rebooting!'
+    return(rebooted);
   }
 }
 
